@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 <template>
   <div class="header-01">
-    <div>
+    <div header-02>
       <img src="header0001" alt="Logo de Empresa Plan" />
     </div>
 
@@ -27,6 +27,21 @@
 
 <style scoped>
 .header-01 {
+  position: absolute;
+  width: 1920px;
+  height: 147px;
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    180deg,
+    #85acb4 39.12%,
+    rgba(138, 180, 188, 0) 100%
+  );
+  mix-blend-mode: normal;
+}
+
+.header-02 {
   position: absolute;
   width: 1200px;
   height: 120px;
