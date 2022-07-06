@@ -1,9 +1,16 @@
-<script setup lang="ts">
-import CompHeader from "../components/CompHeader.vue";
-</script>
-
 <template>
   <main>
-    <CompHeader />
+    <CompBody />
   </main>
 </template>
+
+<script lang="ts">
+import CompBody from "@/components/CompBody.vue";
+
+export default {
+  name: "App",
+  components: {
+    CompBody,
+  },
+};
+</script>

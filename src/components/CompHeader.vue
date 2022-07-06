@@ -7,9 +7,11 @@
     <div class="headerItem-02">
       <div>
         <span> SAC 0800-607-7779</span>
-        <button>facebook</button>
-        <button>instagram</button>
-        <button>LinkedIn</button>
+        <div>
+          <button>facebook</button>
+          <button>instagram</button>
+          <button>LinkedIn</button>
+        </div>
         <button>Trabalhe Conosco</button>
         <button>Area do Cliente @</button>
       </div>
@@ -29,29 +31,21 @@
 <style scoped>
 .headerContainer {
   display: grid;
-
-  position: absolute;
-  width: 1920px;
-  height: 147px;
-  left: 0px;
-  top: 0px;
-
+  grid-template-columns: auto auto;
+  width: 1200px;
+  height: 120px;
+  margin: 5em 15em 0 15em;
+  background: #000c3d;
+  border-radius: 10px;
+  padding: 1em;
   /*  background: l
     inear-gradient(180deg, #85acb4 39.12%, rgba(138, 180, 188, 0) 100%);
   mix-blend-mode: normal; */
 }
 
-.headerItem-01 {
-  /*display: flex;
-  position: absolute;*/
-
-  width: 1200px;
-  height: 120px;
-  left: 360px;
-  top: 20px;
-  background: #000c3d;
-  opacity: 0.9;
-  border-radius: 10px;
+.headerItem-02 {
+  display: flex;
+  justify-content: center;
 }
 #logo {
   width: 220px;
