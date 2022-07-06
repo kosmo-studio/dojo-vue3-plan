@@ -1,8 +1,10 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="header-01">
-    <div class="header-02">
+  <div class="headerContainer">
+    <div class="headerItem-01">
       <img src="src/assets/LogoPlan.png" id="logo" alt="Logo de Empresa Plan" />
+    </div>
+    <div class="headerItem-02">
       <div>
         <span> SAC 0800-607-7779</span>
         <button>facebook</button>
@@ -25,7 +27,9 @@
 </template>
 
 <style scoped>
-.header-01 {
+.headerContainer {
+  display: grid;
+
   position: absolute;
   width: 1920px;
   height: 147px;
@@ -37,13 +41,14 @@
   mix-blend-mode: normal; */
 }
 
-.header-02 {
-  position: absolute;
+.headerItem-01 {
+  /*display: flex;
+  position: absolute;*/
+
   width: 1200px;
   height: 120px;
   left: 360px;
   top: 20px;
-
   background: #000c3d;
   opacity: 0.9;
   border-radius: 10px;
