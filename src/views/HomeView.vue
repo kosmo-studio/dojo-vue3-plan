@@ -1,14 +1,14 @@
 <template>
-  <main>
-    <CompHeader />
-    <!-- <CompSlide /> -->
+  <main class="appMain">
+    <CompHeader class="headerMain" />
+    <CompSlide />
     <CompBody />
   </main>
 </template>
 
 <script lang="ts">
 import CompHeader from "@/components/CompHeader.vue";
-// import CompSlide from "@/components/CompSlide.vue";
+import CompSlide from "@/components/CompSlide.vue";
 import CompBody from "@/components/CompBody.vue";
 
 export default {
@@ -16,7 +16,18 @@ export default {
   components: {
     CompBody,
     CompHeader,
-    // CompSlide,
+    CompSlide,
   },
 };
 </script>
+
+<style>
+.headerMain {
+}
+
+.appMain {
+  position: relative;
+  width: 95em;
+  overflow: hidden;
+}
+</style>

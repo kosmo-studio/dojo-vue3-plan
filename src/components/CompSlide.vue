@@ -9,17 +9,16 @@
 
 <script lang="ts">
 import CarouselMain from "./componentCarousel/CarouselMain.vue";
+import CompHeaderVue from "./CompHeader.vue";
 
 export default {
   name: "CompSlide",
-  components: { CarouselMain },
+  components: { CarouselMain, CompHeaderVue },
   data: () => ({
     slides: [
-      "https://picsum.photos/id/1032/900/400",
-      "https://picsum.photos/id/1033/900/400",
-      "https://picsum.photos/id/1037/900/400",
-      "https://picsum.photos/id/1035/900/400",
-      "https://picsum.photos/id/1036/900/400",
+      "src/assets/slide-01-pai.jpg",
+      "src/assets/slide-02-casa.png",
+      "src/assets/slide-01-pai.jpg",
     ],
   }),
 };

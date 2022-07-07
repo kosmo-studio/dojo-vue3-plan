@@ -1,12 +1,6 @@
 <template>
   <div class="carousel">
     <div class="carousel-inner">
-      <carousel-indicators
-        v-if="indicators"
-        :total="slides.length"
-        :current-index="currentSlide"
-        @switch="switchSlide($event)"
-      ></carousel-indicators>
       <carousel-item
         v-for="(slide, index) in slides"
         :slide="slide"
@@ -23,6 +17,13 @@
         @next="next"
       ></carousel-controls>
     </div>
+    <carousel-indicators
+      v-if="indicators"
+      :total="slides.length"
+      :current-index="currentSlide"
+      @switch="switchSlide($event)"
+      class="carousel-indicator"
+    ></carousel-indicators>
   </div>
 </template>
 
@@ -113,11 +114,17 @@ export default {
 .carousel {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .carousel-inner {
   position: relative;
   width: 900px;
   height: 400px;
   overflow: hidden;
+}
+.carousel-indicator {
+  background-color: black;
+  transform: translateX(50%);
+  position: initial;
 }
 </style>

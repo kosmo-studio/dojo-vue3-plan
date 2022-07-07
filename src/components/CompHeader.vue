@@ -41,6 +41,9 @@
 </template>
 
 <style scoped>
+.headerApp {
+  position: absolute;
+}
 .headerContainer {
   display: grid;
   grid-template-columns: auto auto;
