@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import CarouselItem from "./CarouselItem.vue";
 import CarouselControls from "./CarouselControls.vue";
 import CarouselIndicators from "./CarouselIndicators.vue";
@@ -58,7 +58,7 @@ export default {
     direction: "right",
   }),
   methods: {
-    setCurrentSlide(index) {
+    setCurrentSlide(index: any) {
       this.currentSlide = index;
     },
     prev(step = -1) {
@@ -91,7 +91,7 @@ export default {
     stopSlideTimer() {
       clearInterval(this.slideInterval);
     },
-    switchSlide(index) {
+    switchSlide(index: number) {
       const step = index - this.currentSlide;
       if (step > 0) {
         this.next(step);
