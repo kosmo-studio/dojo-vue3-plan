@@ -1,33 +1,19 @@
 <template>
-  <main class="appMain">
-    <CompHeader class="headerMain" />
-    <CompSlide />
-    <CompBody />
-  </main>
+  <CompHeader />
+  <CompSlide />
 </template>
 
 <script lang="ts">
-import CompHeader from "@/components/CompHeader.vue";
+import { defineComponent } from "vue";
 import CompSlide from "@/components/CompSlide.vue";
-import CompBody from "@/components/CompBody.vue";
+import CompHeader from "@/components/CompHeader.vue";
 
-export default {
-  name: "App",
+export default defineComponent({
+  name: "HomeView",
+
   components: {
-    CompBody,
-    CompHeader,
     CompSlide,
+    CompHeader,
   },
-};
+});
 </script>
-
-<style>
-.headerMain {
-}
-
-.appMain {
-  position: relative;
-  width: 95em;
-  overflow: hidden;
-}
-</style>

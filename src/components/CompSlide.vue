@@ -1,24 +1,31 @@
 <template>
-  <CarouselMain
-    :slides="slides"
-    :interval="3000"
-    controls
-    indicators
-  ></CarouselMain>
+  <v-carousel>
+    <v-carousel-item
+      v-for="(slide, i) in slides"
+      :key="i"
+      :src="slide.src"
+      reverse-transition="fade-transition"
+      transition="fade-transition"
+    >
+    </v-carousel-item>
+  </v-carousel>
 </template>
 
 <script lang="ts">
-import CarouselMain from "./componentCarousel/CarouselMain.vue";
-import CompHeaderVue from "./CompHeader.vue";
-
 export default {
   name: "CompSlide",
-  components: { CarouselMain, CompHeaderVue },
+  components: {},
   data: () => ({
     slides: [
-      "src/assets/slide-01-pai.jpg",
-      "src/assets/slide-02-casa.png",
-      "src/assets/slide-01-pai.jpg",
+      {
+        src: "src/assets/slide-02-casa.png",
+      },
+      {
+        src: "src/assets/slide-01-pai.jpg",
+      },
+      {
+        src: "src/assets/slide-02-casa.png",
+      },
     ],
   }),
 };
