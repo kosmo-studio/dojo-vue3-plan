@@ -1,41 +1,24 @@
-<script>
+<script lang="ts">
 export default {
   name: "CompHeader",
-  data: () => ({
-    drawer: false,
-    group: null,
-  }),
+  data: () => ({}),
 };
 </script>
 <template>
-  <v-card class="mx-auto overflow-hidden" height="400">
-    <v-app-bar color="deep-purple" dark>
-      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Title</v-toolbar-title>
-    </v-app-bar>
-
-    <v-navigation-drawer v-model="drawer" absolute temporary>
-      <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="deep-purple--text text--accent-4"
-        >
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-home</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Home</v-list-item-title>
-          </v-list-item>
-
-          <v-list-item>
-            <v-list-item-icon>
-              <v-icon>mdi-account</v-icon>
-            </v-list-item-icon>
-            <v-list-item-title>Account</v-list-item-title>
-          </v-list-item>
-        </v-list-item-group>
-      </v-list>
-    </v-navigation-drawer>
+  <v-card
+    color="#000C3D"
+    rounded
+    class="mx-auto ma-3"
+    width="1200"
+    height="120"
+  >
+    <div class="pa-4">
+      <v-img
+        height="68.48"
+        width="220"
+        aspect-ratio="1"
+        src="src/assets/img/LogoPlan.png"
+      ></v-img>
+    </div>
   </v-card>
 </template>

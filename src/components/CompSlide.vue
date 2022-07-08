@@ -18,13 +18,13 @@ export default {
   data: () => ({
     slides: [
       {
-        src: "src/assets/slide-02-casa.png",
+        src: "src/assets/img/slide-02-casa.png",
       },
       {
-        src: "src/assets/slide-01-pai.jpg",
+        src: "src/assets/img/slide-01-pai.jpg",
       },
       {
-        src: "src/assets/slide-02-casa.png",
+        src: "src/assets/img/slide-02-casa.png",
       },
     ],
   }),
