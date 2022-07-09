@@ -1,5 +1,5 @@
 <template>
-  <v-carousel>
+  <v-carousel cycle interval="3000" max-width="1900px" height="800px">
     <v-carousel-item
       v-for="(slide, i) in slides"
       :key="i"
